@@ -1,6 +1,7 @@
 //main script file
 
 
+
 // these are user inputs for ingredients. The first one has a placeholder of gin
 var allDrinkIngredients =  [];
 var allMealIngredients = [];
@@ -40,8 +41,7 @@ fetch(queryDrinksID)
       // selectRandomMeal(dataMeal)
     })
 
-
-
+//update
 
 //this is randomly selecting a drink based on the userinput (gin). Test it out in the console and let me know your thoughts!
 function selectRandomDrink(data){
@@ -73,4 +73,6 @@ function selectRandomMealDetails(randomMeal) {
   console.log(randomMealDetails)
   localStorage.setItem('meal-Api', randomMealDetails)
     }
+
+
 
