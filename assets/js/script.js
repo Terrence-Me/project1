@@ -1,5 +1,8 @@
 //main script file
+//www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007
+//
 
+andrew_branch
 
 
 // these are user inputs for ingredients. The first one has a placeholder of gin
@@ -73,6 +76,23 @@ function selectRandomMealDetails(randomMeal) {
   console.log(randomMealDetails)
   localStorage.setItem('meal-Api', randomMealDetails)
     }
+=======
+var drinkName = 'margarita';
+var drinkSearchApi ='https://www.thecocktaildb.com/api/json/v1/1/search.php';
+
+
+var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+  
+fetch(drinkSearchApi, requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+main
+
+
 
 
 
