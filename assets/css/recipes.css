@@ -19,7 +19,7 @@
 
 .meals-story {
     display: flex;
-    background-image: url("../crunch\ paper.jpg");
+    background-image: url("../images/crunch-paper.jpg");
     background-position: cover;
     background-repeat: no-repeat;
     padding: 15px;
