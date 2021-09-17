@@ -1,5 +1,5 @@
 body {
-  background-image: url(../project1/assets/images/crunch-paper.jpg);
+  background-image: url(../images/crunch-paper.jpg);
 }
 
 .main-container {
@@ -109,9 +109,26 @@ body {
   font-size: 1.5rem;
 }
 
-/* .drink-form {
+.buttondiv {
+  align-items: center;
+  padding: 10px;
+}
+.submit{
+  padding: 15px;
+  color: white;
+  background-color: rgb(243, 132, 81) ;
+  width: 50%;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.center {
   display: flex;
-  flex-direction: row;
-  margin-top: 5%;
   justify-content: center;
-} */
+  align-items: center;
+  height: 100px;
+}
+
+button:hover {
+  opacity: 50%;
+}

@@ -1,0 +1,88 @@
+body {
+  background-color: #e63c3cad;
+}
+
+.main-container {
+  background-color: #fff;
+  margin: 5vh 10vw;
+  height: 90vh;
+  box-shadow: -15px 10px 5px #525050;
+}
+
+.main-container-header {
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+  font-family: "Permanent-Marker", cursive;
+  font-size: 500%;
+  font-weight: bold;
+}
+
+.meal-options {
+  border: 1px solid black;
+  margin: 5% 20%;
+  text-align: center;
+  height: 30%;
+}
+
+.meals {
+  border: 2px solid #662317;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 150%;
+  padding: 10px 30px;
+  font-weight: bold;
+  box-shadow: -10px 5px 3px #525050;
+  background-color: #da8d00;
+  color: #fff;
+  /* margin: 5px 40px; */
+}
+
+.drink-options {
+  border: 1px solid black;
+  margin: 5% 20%;
+  text-align: center;
+  height: 30%;
+}
+
+.drinks {
+  border: 2px solid #662317;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 150%;
+  padding: 10px 30px;
+  font-weight: bold;
+  box-shadow: -10px 5px 3px #525050;
+  background-color: #da8d00;
+  color: #fff;
+}
+
+.meal-form,
+.drink-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+#dinner,
+#liquor {
+  width: 60%;
+  margin-left: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.meal-label,
+.drink-label {
+  font-size: 1.5rem;
+}
+
+/* .drink-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: center;
+} */
