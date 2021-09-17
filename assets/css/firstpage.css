@@ -1,0 +1,117 @@
+body {
+  background-image: url(../project1/assets/images/crunch-paper.jpg);
+}
+
+.main-container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(82, 80, 80) -15px 10px 5px;
+  margin: 5vh 10vw;
+  padding: 20px;
+}
+
+.main-container-header {
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+  font-family: "Permanent-Marker", cursive;
+  font-size: 500%;
+  font-weight: bold;
+}
+
+.meal-options {
+  border: 1px solid black;
+  margin: 5% 20%;
+  text-align: center;
+  height: 30%;
+}
+
+.meals {
+  width: auto;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: rgb(82, 80, 80) -10px 5px 3px;
+  background-color: maroon;
+  color: rgb(255, 255, 255);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(102, 35, 23);
+  border-image: initial;
+  padding: 30px 10px;
+  margin: 40px;
+}
+
+.drink-options {
+  border: 1px solid black;
+  margin: 5% 20%;
+  text-align: center;
+  height: 30%;
+}
+
+/*lily_branch: added responsive layout*/
+@media screen and (max-width: 1000px) {
+  .drink-options,
+  .meal-options {
+      padding: 10px;
+      display: block;
+      align-items: center;
+      width: auto;
+      margin: auto;
+  }
+
+  .drink-form,
+  .meal-form,
+  #liquor,
+  #dinner {
+      flex-wrap: wrap;
+      display: table-column;
+      align-items: center;
+      width: auto;
+      margin: auto;
+  }
+}
+/**/
+
+.drinks {
+  width: auto;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: rgb(82, 80, 80) -10px 5px 3px;
+  background-color: maroon;
+  color: rgb(255, 255, 255);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(102, 35, 23);
+  border-image: initial;
+  padding: 30px 10px;
+  margin: 40px;
+}
+
+.meal-form,
+.drink-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+#dinner,
+#liquor {
+  width: 60%;
+  margin-left: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.meal-label,
+.drink-label {
+  font-size: 1.5rem;
+}
+
+/* .drink-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: center;
+} */
