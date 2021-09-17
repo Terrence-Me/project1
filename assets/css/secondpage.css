@@ -13,13 +13,15 @@
 
 .meals {
     display: flex;
-    margin:20px;
+    margin: 20px;
     padding: 20px;
 }
 
 .meals-story {
     display: flex;
-    background: rgb(245, 219, 185);
+    background-image: url("../images/crunch-paper.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
     padding: 15px;
     box-shadow: -10px 10px 10px rgb(143, 133, 133);
 }
@@ -42,7 +44,7 @@
     object-fit: contain;
     height: 400px;
     width: 400px;
-    border: 2px solid rgb(129, 14, 14);
+    border: 5px solid rgb(129, 14, 14);
 }
 
 .meals-ingredients {
@@ -52,7 +54,6 @@
     justify-content: center;
     font-size: 30px;
     line-height: 1.5;
-
 }
 
 .meals-paragraph {
@@ -79,8 +80,6 @@
     }
   }
 
-
-
 /* Drinks */
 
 .drinks {
@@ -91,7 +90,9 @@
 
 .drinks-story {
     display: flex;
-    background: rgb(245, 219, 185);
+    background-image: url("../images/crunch-paper.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
     padding: 15px;
     box-shadow: -10px 10px 10px rgb(143, 133, 133);
 }
@@ -114,7 +115,7 @@
     object-fit: contain;
     height: 400px;
     width: 400px;
-    border: 2px solid rgb(129, 14, 14);
+    border: 5px solid rgb(129, 14, 14);
 }
 
 .drinks-ingredients {
@@ -124,7 +125,6 @@
     justify-content: center;
     font-size: 30px;
     line-height: 1.5;
-
 }
 
 .drinks-paragraph {
@@ -152,6 +152,7 @@
   }
 
 .buttondiv {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,15 +160,25 @@
 }
 
 .button {
+    color: white;
+    background-color: maroon;
     height: 75px;
     width: 1000px;
     font-size: 20px;
     margin-left: 10px;
+    transition: 0.3s;
 }
 
 .go-back {
+    color: white;
+    background-color: maroon;
     height: 75px;
     width: 1000px;
     font-size: 20px;
     margin-right: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 50%;
 }
