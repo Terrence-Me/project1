@@ -1,0 +1,132 @@
+body {
+  background-image: url(../images/crunch-paper.jpg);
+}
+
+.main-container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(82, 80, 80) -15px 10px 5px;
+  margin: 5vh 10vw;
+}
+
+.main-container-header {
+  width: 100%;
+  text-align: center;
+
+  font-family: "Permanent-Marker", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.meal-options,
+.drink-options {
+  margin: 0 20%;
+  height: 30%;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-family: "Permanent-Marker", cursive;
+}
+
+.meals,
+.drinks {
+  width: auto;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: rgb(82, 80, 80) -10px 5px 3px;
+  background-color: maroon;
+  color: rgb(255, 255, 255);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(102, 35, 23);
+  border-image: initial;
+  padding: 30px 10px;
+  margin: 4%;
+}
+
+.meal-form,
+.drink-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  box-shadow: rgb(82, 80, 80) -10px 10px 3px;
+}
+
+#dinner,
+#liquor {
+  width: 60%;
+  margin-left: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Permanent-Marker", cursive;
+  font-weight: bolder;
+}
+
+.meal-label,
+.drink-label {
+  font-size: 1.5rem;
+}
+
+.buttondiv {
+  align-items: center;
+  padding: 10px;
+}
+.submit {
+  padding: 15px;
+  color: white;
+  background-color: rgb(243, 132, 81);
+  width: 50%;
+  font-size: 120%;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+button:hover {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    margin: 0;
+  }
+  .main-container-header {
+    font-size: 1.5rem;
+  }
+  .meals,
+  .drinks {
+    padding: 10px;
+  }
+  .meal-options,
+  .drink-options {
+    margin: 0 5%;
+  }
+
+  .meal-form,
+  .drink-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .meal-label,
+  .drink-label {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  #dinner,
+  #liquor {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Permanent-Marker", cursive;
+    font-weight: bolder;
+  }
+}
