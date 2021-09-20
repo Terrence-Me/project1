@@ -1,3 +1,4 @@
+
 var drinkSelection = localStorage.getItem("drink-Api");
 var mealSelection = localStorage.getItem("meal-Api");
 
@@ -78,22 +79,27 @@ function renderDrinkIngredients(allDrinkIngredients) {
       return;
     }
   }
+
 }
 
 //Renders drink instructions
 function renderDrinkInstructions(strDrinkInstructions) {
+
   var drinkDescription = document.createElement("p");
   drinkDescription.classList.add("drink-description-p");
   drinkDescription.textContent = strDrinkInstructions;
   drinkInstructionsEl.append(drinkDescription);
+
 }
 
 //Renders drink name
 function renderDrinkName(drinkName) {
+
   var drinkNameHeader = document.createElement("h3");
   drinkNameHeader.classList.add("drink-name-header");
   drinkNameHeader.textContent = drinkName;
   drinkHeaderEl.append(drinkNameHeader);
+
 }
 
 //Renders drink image
@@ -187,3 +193,4 @@ function renderMealName(mealName) {
 function renderMealImage(mealImage) {
   mealImageEl.src = mealImage;
 }
+

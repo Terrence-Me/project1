@@ -41,6 +41,9 @@ body {
   border-image: initial;
   padding: 30px 10px;
   margin: 4%;
+
+
+
 }
 
 .meal-form,
@@ -49,9 +52,11 @@ body {
   flex-direction: row;
   margin-top: 5%;
   justify-content: center;
+
   padding-bottom: 5%;
   padding-top: 5%;
   box-shadow: rgb(82, 80, 80) -10px 10px 3px;
+
 }
 
 #dinner,
@@ -62,6 +67,7 @@ body {
   text-align: center;
   font-family: "Permanent-Marker", cursive;
   font-weight: bolder;
+
 }
 
 .meal-label,
@@ -73,6 +79,7 @@ body {
   align-items: center;
   padding: 10px;
 }
+
 .submit {
   padding: 15px;
   color: white;
@@ -130,3 +137,4 @@ button:hover {
     font-weight: bolder;
   }
 }
+

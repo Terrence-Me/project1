@@ -1,4 +1,5 @@
 //main script file
+
 var mealOptions = ["Pork", "Chicken", "Seafood", "Vegetarian", "Beef"];
 var selectMeal = document.getElementById("dinner");
 var drinkOptions = ["Whiskey", "Tequila", "Rum", "Gin", "Scotch"];
@@ -18,12 +19,14 @@ for (var i = 0; i < mealOptions.length; i++) {
   selectMeal.appendChild(opt);
 }
 
+
 for (var i = 0; i < drinkOptions.length; i++) {
   var opt = document.createElement("option");
   opt.value = drinkOptions[i];
   opt.innerHTML = drinkOptions[i];
   selectDrink.appendChild(opt);
 }
+
 
 // The user input values are concated to the API and stored into variables
 //A fetch is ran on both API's. Each API is a list of drink names and a drink name ID
@@ -38,8 +41,10 @@ function concatApi(ingredientInputOne, mealIngredientInputOne) {
     "https://www.themealdb.com/api/json/v1/1/filter.php?c=" +
     mealIngredientInputOne;
 
+
   console.log(queryDrinksID);
   console.log(queryMealID);
+
 
   fetch(queryDrinksID)
     .then(function (response) {
@@ -112,3 +117,4 @@ document.getElementById("btnsubmit").addEventListener("click", function () {
 
   concatApi(ingredientInputOne, mealIngredientInputOne);
 });
+
