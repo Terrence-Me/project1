@@ -1,7 +1,10 @@
+
+
 var allDrinkIngredients = [];
 var allMeasurements = [];
 var allMealMeasurements = [];
 var allMealIngredients = [];
+
 var drinkLis = [];
 var mealLis = [];
 var drinkSelection = localStorage.getItem('drink-Api');
@@ -20,8 +23,19 @@ var mealImageEl = document.querySelector('.meals-img')
 selectRandomDrinkDetails()
 selectRandomMealDetails()
 
+
 //this function pulls the API URL from lcoal storage and triggers the compileDrinkDataToRenderFunction
 function selectRandomDrinkDetails() {
+  fetch(drinkSelection)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data1) {
+      compileDrinkDataToRender(data1);
+      console.log(data1);
+    });
+}
+
 
     fetch(drinkSelection)
         .then(function (response) {
@@ -71,11 +85,12 @@ function compileDrinkDataToRender(data1) {
     renderDrinkIngredients(allDrinkIngredients);
     renderDrinkInstructions(strDrinkInstructions);
     renderDrinkMeasurements(allMeasurements)
-}
 
+}
 
 //renders drink ingredients using for loop since there are multiple ingredients
 function renderDrinkIngredients(allDrinkIngredients) {
+
 
     
 
@@ -91,7 +106,10 @@ function renderDrinkIngredients(allDrinkIngredients) {
         } else {
             return
         }
+
     }
+  }
+
 }
 
 function renderDrinkMeasurements(allMeasurements){
@@ -113,49 +131,40 @@ function renderDrinkMeasurements(allMeasurements){
 //Renders drink instructions
 function renderDrinkInstructions(strDrinkInstructions) {
 
-    var drinkDescription = document.createElement('p');
-    drinkDescription.classList.add('drink-description-p')
-    drinkDescription.textContent = strDrinkInstructions;
-    drinkInstructionsEl.append(drinkDescription);
-
+  var drinkDescription = document.createElement("p");
+  drinkDescription.classList.add("drink-description-p");
+  drinkDescription.textContent = strDrinkInstructions;
+  drinkInstructionsEl.append(drinkDescription);
 
 }
 
 //Renders drink name
 function renderDrinkName(drinkName) {
-    var drinkNameHeader = document.createElement('h3')
-    drinkNameHeader.classList.add('drink-name-header')
-    drinkNameHeader.textContent = drinkName;
-    drinkHeaderEl.append(drinkNameHeader)
 
+  var drinkNameHeader = document.createElement("h3");
+  drinkNameHeader.classList.add("drink-name-header");
+  drinkNameHeader.textContent = drinkName;
+  drinkHeaderEl.append(drinkNameHeader);
 
 }
 
 //Renders drink image
 function renderDrinkImage(drinkImage) {
-    drinkImageEl.src = drinkImage
+  drinkImageEl.src = drinkImage;
 }
-
-
-
 
 function selectRandomMealDetails() {
-
-    fetch(mealSelection)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data2) {
-           
-
-            compileMealDataToRender(data2)
-
-        })
-
+  fetch(mealSelection)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data2) {
+      compileMealDataToRender(data2);
+    });
 }
 
-
 function compileMealDataToRender(data2) {
+
 
 
     for (var i = 0; i < 20; i++) {
@@ -228,24 +237,22 @@ function renderMealMeasurements(allMealMeasurements){
  }
 
 
+
 function renderMealInstructions(strMealInstructions) {
-
-    var mealDescription = document.createElement('p');
-    mealDescription.classList.add('meal-instructions-p')
-    mealDescription.textContent = strMealInstructions;
-    mealInstructionsEl.append(mealDescription);
-
-
+  var mealDescription = document.createElement("p");
+  mealDescription.classList.add("meal-instructions-p");
+  mealDescription.textContent = strMealInstructions;
+  mealInstructionsEl.append(mealDescription);
 }
 
-
 function renderMealName(mealName) {
-    var mealNameHeader = document.createElement('h3')
-    mealNameHeader.classList.add('mean-name-h3')
-    mealNameHeader.textContent = mealName;
-    mealHeaderEl.append(mealNameHeader)
+  var mealNameHeader = document.createElement("h3");
+  mealNameHeader.classList.add("mean-name-h3");
+  mealNameHeader.textContent = mealName;
+  mealHeaderEl.appendChild(mealNameHeader);
 }
 
 function renderMealImage(mealImage) {
-mealImageEl.src = mealImage
+  mealImageEl.src = mealImage;
 }
+
