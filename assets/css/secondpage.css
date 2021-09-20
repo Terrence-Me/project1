@@ -1,184 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .hr {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-/* Meals */
-
-.meals {
-    display: flex;
-    margin: 20px;
-    padding: 20px;
+  margin: 0 6%;
 }
 
-.meals-story {
-    display: flex;
-    background-image: url("../images/crunch-paper.jpg");
-    background-position: cover;
-    background-repeat: no-repeat;
-    padding: 15px;
-    box-shadow: -10px 10px 10px rgb(143, 133, 133);
-}
-
-.meals-info {
-    display: flex;
-    margin-left: 20px;
-    background: rgb(233, 227, 227);
-    padding: 10px;
-}
-
-.meals-head {
-    font-size: 40px;
-    font-family: 'Bevan', cursive;
-    padding-right: 20px;
-    color: rgb(129, 14, 14);
-}
-
-.meals-img {
-    object-fit: contain;
-    height: 400px;
-    width: 400px;
-    border: 5px solid rgb(129, 14, 14);
-}
-
-.meals-ingredients {
-    flex: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    line-height: 1.5;
-}
-
-.meals-paragraph {
-    flex: 0.5;
-    font-size: 30px;;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media (max-width: 1120px) {
-    .meals {
-      flex-wrap: wrap;
-    }
-    .meals-story {
-        display: flex;
-        justify-content: space-evenly;
-        width: 1000px;
-    }
-    .meals-info {
-        margin-left: 0;
-        margin-top: 45px;
-    }
-  }
-
-/* Drinks */
-
+.meals,
 .drinks {
-    display: flex;
-    margin:20px;
-    padding: 20px;
+  display: flex;
+  margin: 0.5%;
+  padding: 1.5%;
 }
 
+.meals-story,
 .drinks-story {
-    display: flex;
-    background-image: url("../images/crunch-paper.jpg");
-    background-position: cover;
-    background-repeat: no-repeat;
-    padding: 15px;
-    box-shadow: -10px 10px 10px rgb(143, 133, 133);
+  display: flex;
+  width: 40%;
+  background-image: url("../images/crunch-paper.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  box-shadow: -10px 10px 10px rgb(143, 133, 133);
 }
 
+.meals-info,
 .drinks-info {
-    display: flex;
-    margin-left: 20px;
-    background: rgb(233, 227, 227);
-    padding: 10px;
+  display: flex;
+  margin-left: 20px;
+  background: rgb(233, 227, 227);
+  padding: 10px;
+  width: 60%;
+  /* overflow: scroll; */
 }
 
+.meals-head,
 .drinks-head {
-    font-size: 40px;
-    font-family: 'Bevan', cursive;
-    padding-right: 20px;
-    color: rgb(129, 14, 14);
+  font-size: 2rem;
+  font-family: "Bevan", cursive;
+
+  color: rgb(129, 14, 14);
+  margin-right: 1%;
+  width: 30%;
 }
 
+.meals-img,
 .drinks-img {
-    object-fit: contain;
-    height: 400px;
-    width: 400px;
-    border: 5px solid rgb(129, 14, 14);
+  object-fit: contain;
+  max-height: 350px;
+  max-width: 350px;
+  border: 5px solid rgb(129, 14, 14);
 }
 
+.meals-ingredients,
 .drinks-ingredients {
-    flex: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    line-height: 1.5;
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  line-height: 1.5;
+  width: 70px;
+  height: 100%;
 }
 
+.meals-items,
+.drinks-items {
+  list-style: none;
+}
+
+h4 {
+  padding-bottom: 15px;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.meals-paragraph,
 .drinks-paragraph {
-    flex: 0.5;
-    font-size: 30px;;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 0.7;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 150%;
 }
-
-@media (max-width: 1120px) {
-    .drinks {
-      flex-wrap: wrap;
-    }
-    .drinks-story {
-        display: flex;
-        justify-content: space-evenly;
-        width: 1000px;
-    }
-    .drinks-info {
-        margin-left: 0;
-        margin-top: 45px;
-    }
-  }
 
 .buttondiv {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px;
 }
 
 .button {
-    color: white;
-    background-color: maroon;
-    height: 75px;
-    width: 1000px;
-    font-size: 20px;
-    margin-left: 10px;
-    transition: 0.3s;
+  color: white;
+  background-color: maroon;
+  height: 75px;
+  width: 1000px;
+  font-size: 20px;
+  margin-left: 10px;
+  transition: 0.3s;
 }
 
 .go-back {
-    color: white;
-    background-color: maroon;
-    height: 75px;
-    width: 1000px;
-    font-size: 20px;
-    margin-right: 10px;
-    transition: 0.3s;
+  color: white;
+  background-color: maroon;
+  height: 75px;
+  width: 1000px;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.go-back-link {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
 }
 
 button:hover {
-    opacity: 50%;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+  .meals,
+  .drinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% 0;
+    padding: 0;
+  }
+  .meals-info,
+  .drinks-info {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .meals-story,
+  .drinks-story {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .meals-story,
+  .drinks-story {
+    flex-direction: column;
+  }
+
+  .meals-head,
+  .drinks-head {
+    margin: 0 auto 1% auto;
+    width: 50%;
+    text-align: center;
+  }
+  .meals-img,
+  .drinks-img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto 1% auto;
+  }
+  .meals-ingredients,
+  .drinks-ingredients {
+    font-size: 1.5rem;
+  }
+  .meals-paragraph,
+  .drinks-paragraph {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .meals-ingredients,
+  .drinks-ingredients {
+    font-size: 1.3rem;
+  }
+  .meals-paragraph,
+  .drinks-paragraph {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .meals-head,
+  .drinks-head {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .meals-ingredients,
+  .drinks-ingredients {
+    font-size: 1rem;
+    margin-right: 2.5%;
+  }
+  .meals-paragraph,
+  .drinks-paragraph {
+    font-size: 0.9rem;
+  }
 }
