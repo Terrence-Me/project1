@@ -6,72 +6,27 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(82, 80, 80) -15px 10px 5px;
   margin: 5vh 10vw;
-  padding: 20px;
 }
 
 .main-container-header {
   width: 100%;
   text-align: center;
-  padding-top: 2%;
+
   font-family: "Permanent-Marker", cursive;
-  font-size: 500%;
+  font-size: 4rem;
   font-weight: bold;
 }
 
-.meal-options {
-  border: 1px solid black;
-  margin: 5% 20%;
-  text-align: center;
-  height: 30%;
-}
-
-.meals {
-  width: auto;
-  font-size: 150%;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: rgb(82, 80, 80) -10px 5px 3px;
-  background-color: maroon;
-  color: rgb(255, 255, 255);
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(102, 35, 23);
-  border-image: initial;
-  padding: 30px 10px;
-  margin: 40px;
-}
-
+.meal-options,
 .drink-options {
-  border: 1px solid black;
-  margin: 5% 20%;
-  text-align: center;
+  margin: 0 20%;
   height: 30%;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-family: "Permanent-Marker", cursive;
 }
 
-/*lily_branch: added responsive layout*/
-@media screen and (max-width: 1000px) {
-  .drink-options,
-  .meal-options {
-      padding: 10px;
-      display: block;
-      align-items: center;
-      width: auto;
-      margin: auto;
-  }
-
-  .drink-form,
-  .meal-form,
-  #liquor,
-  #dinner {
-      flex-wrap: wrap;
-      display: table-column;
-      align-items: center;
-      width: auto;
-      margin: auto;
-  }
-}
-/**/
-
+.meals,
 .drinks {
   width: auto;
   font-size: 150%;
@@ -85,7 +40,10 @@ body {
   border-color: rgb(102, 35, 23);
   border-image: initial;
   padding: 30px 10px;
-  margin: 40px;
+  margin: 4%;
+
+
+
 }
 
 .meal-form,
@@ -94,6 +52,11 @@ body {
   flex-direction: row;
   margin-top: 5%;
   justify-content: center;
+
+  padding-bottom: 5%;
+  padding-top: 5%;
+  box-shadow: rgb(82, 80, 80) -10px 10px 3px;
+
 }
 
 #dinner,
@@ -102,6 +65,9 @@ body {
   margin-left: 2%;
   font-size: 1.5rem;
   text-align: center;
+  font-family: "Permanent-Marker", cursive;
+  font-weight: bolder;
+
 }
 
 .meal-label,
@@ -113,12 +79,14 @@ body {
   align-items: center;
   padding: 10px;
 }
-.submit{
+
+.submit {
   padding: 15px;
   color: white;
-  background-color: rgb(243, 132, 81) ;
+  background-color: rgb(243, 132, 81);
   width: 50%;
-  font-size: 20px;
+  font-size: 120%;
+  font-weight: bolder;
   transition: 0.3s;
 }
 
@@ -132,3 +100,41 @@ body {
 button:hover {
   opacity: 50%;
 }
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    margin: 0;
+  }
+  .main-container-header {
+    font-size: 1.5rem;
+  }
+  .meals,
+  .drinks {
+    padding: 10px;
+  }
+  .meal-options,
+  .drink-options {
+    margin: 0 5%;
+  }
+
+  .meal-form,
+  .drink-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .meal-label,
+  .drink-label {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  #dinner,
+  #liquor {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Permanent-Marker", cursive;
+    font-weight: bolder;
+  }
+}
+

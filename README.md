@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Random Meal & Drink Generator
 
 ## Overview
@@ -30,3 +31,13 @@ The Idea is to randomly choose a meal and a drink by selecting the type of main 
 	Firstpage.html is the landing page.  The user will be presented with two categories a Meals section and a Drinks section.
 	The two sections contain a dropdown list box (optiongroup) where the user will select the type of meal and drink.  Once the options are selected the user will then click on the submit button which will then send them over to the second page.
 	The secondpage.html will have a random meal and drink that will contain one of the selected ingredients from the dropdown list box along with an image, all ingredients and directions on how to make it. 
+=======
+testing
+test
+
+#images
+![screenshots](./assets/images/screenshot-meal-and-drink-generator-pg1.png)
+![screenshots](./assets/images/screenshot-meal-and-drink-generator-pg2.png)
+
+![screenshots](./assets/images/gif-meal-and-drink-generator.gif)
+>>>>>>> b1e28d59689f23c2ad4f8b327591e5264efe9631
