@@ -37,16 +37,6 @@ function selectRandomDrinkDetails() {
 }
 
 
-    fetch(drinkSelection)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data1) {
-
-            compileDrinkDataToRender(data1)
-        })
-};
-
     
 //this function takes the ingredients, drink instructions, drinkName and drink image and stores them all into variables. 
 function compileDrinkDataToRender(data1) {
@@ -110,7 +100,7 @@ function renderDrinkIngredients(allDrinkIngredients) {
     }
   }
 
-}
+
 
 function renderDrinkMeasurements(allMeasurements){
    
